@@ -1,7 +1,7 @@
 .. _Accessibility Best Practices for Course Content Development:
 
 ############################################################
-Accessibility Best Practices for Course Content Development
+Accessibility Best Practices for Developing Course Content
 ############################################################
 
 EdX is dedicated to creating a platform that is not only itself accessible,
