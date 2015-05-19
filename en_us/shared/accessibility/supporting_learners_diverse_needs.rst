@@ -19,6 +19,10 @@ We welcome any comments and questions.
    course content might not be accessible or might not meet our standards for
    accessibility.
 
+************************
+Who Are Our Learners?
+************************
+
 In the following sections, we outline guidelines for creating and delivering
 course content that allows students to use built-in accessibility
 functionality (such as magnification and zoom features), assistive
@@ -49,27 +53,27 @@ diverse needs, such as those in the following list.
   the equivalent information in an alternative format, such as captions or a
   transcript.
 
-We highly recommend that you implement the best practices shared with you in
-this document and other widely available resources.
+*****************************
+Removing Barriers to Learning
+*****************************
 
+EdX highly recommends that you implement the best practices in this document
+and in other resources. If you cannot easily address any of these barriers to
+providing accessible course content, EdX recommends that you consult with
+resources at your organization such as Disability Services, Assistive
+Technology, or Accessibility.
 
+For additional information about accessibility and accessibility standards,
+refer to these resources.
 
-
-
-If you cannot easily address any of these barriers to providing accessible
-course content, we recommend that you consult with resources at your
-organization such as Disability Services, Assistive Technology, or
-Accessibility). 
-
-In addition, you can refer to these resources.
-
-* User Agent Accessibility Guidelines (UAAG) 1.0
-* Authoring Tool Accessibility Guidelines (ATAG) 2.0
-* WAI-ARIA
-* WCAT2ICT
-* EPUB3
-* DAISY
-* MathML
+* User Agent Accessibility Guidelines (UAAG) (http://www.w3.org/WAI/intro/uaag.php#whatis)
+* Authoring Tool Accessibility Guidelines (ATAG) (http://www.w3.org/WAI/intro/atag.php)
+* WAI-ARIA (Accessible Rich Internet Applications) (http://www.w3.org/WAI/intro/aria.php)
+* WCAT2ICT (http://www.w3.org/WAI/intro/wcag2ict)
+* EPUB 3.0 (http://idpf.org/epub/30)
+* DAISY Consortium (http://www.daisy.org/)
+* MathJax (http://www.mathjax.org)
+* MathML (http://www.w3.org/Math/)
 
 While your ability to support students in the MOOC context might be different
 from supporting on-campus students, we encourage you to develop a plan to
