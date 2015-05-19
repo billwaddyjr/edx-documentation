@@ -22,6 +22,7 @@ develop courses that can serve the widest possible audience.
    responsible for creating course content.
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 2
    
    edX_accessib_guidelines
