@@ -82,6 +82,10 @@ Alphabetical Event List
      - :ref:`Instructor_Event_Types`
    * - ``edx.instructor.report.requested``
      - :ref:`Instructor_Event_Types`
+   * - ``edx.problem.hint.demandhint_displayed``
+     - :ref:`problem`
+   * - ``edx.problem.hint.feedback_displayed``
+     - :ref:`problem`
    * - ``edx.video.loaded``
      - :ref:`video`, see ``load_video``
    * - ``edx.video.paused``

@@ -1886,20 +1886,9 @@ Problem Interaction Events
 
 This section includes descriptions of the following events. 
 
-* ``problem_check`` (Browser)
-* ``problem_check`` (Server)
-* ``problem_check_fail``
-* ``problem_reset``
-* ``problem_rescore``
-* ``problem_rescore_fail``
-* ``problem_save``
-* ``problem_show``
-* ``reset_problem``
-* ``reset_problem_fail`` 
-* ``show_answer`` 
-* ``save_problem_fail`` 
-* ``save_problem_success``
-* ``problem_graded``
+.. contents:: Section Contents
+  :local:
+  :depth: 1
 
 Problem interaction events are emitted by the server or the browser to capture
 information about interactions with problems. 
@@ -1908,6 +1897,112 @@ These events were designed for the problem types implemented in the edX
 platform by the ``capa_module.py`` XBlock. Problem types that are implemented
 by other XBlocks, such as :ref:`open response assessments<ora2>`, are
 instrumented with different events.
+
+``edx.problem.hint.demandhint_displayed``
+******************************************
+
+Course teams can design problems to include one or more hints. For problems
+that include hints, the server emits an
+``edx.problem.hint.demandhint_displayed`` event each time a user requests a
+hint.
+
+For more information about adding hints to a problem, see %% in the *Building
+and Running an edX Course* guide.
+
+**Component**: Capa Module
+
+**Event Source**: Server
+
+**History**: This event was added on 9 Jun 2015.
+
+``event`` **Member Fields**: 
+
+.. list-table::
+   :widths: 15 15 60
+   :header-rows: 1
+
+   * - Field
+     - Type
+     - Details
+   * - ``hint_index``
+     - integer
+     - Identifies the hint that was displayed to the user. The first hint
+       defined for the problem is identified as ``hint_index: 0``.
+   * - ``hint_len``
+     - integer
+     - The total number of hints defined for this problem. 
+   * - ``hint_text``
+     - integer
+     - The text of the hint that fisplayed to the user.
+   * - ``module_id``
+     - string
+     - Identifier for the problem component for which the user requested the
+       hint.
+
+``edx.problem.hint.feedback_displayed``
+*****************************************
+
+Course teams can design problems to include feedback messages that appear after
+a user submits an answer. For problems that include feedback messages, the
+server emits an ``edx.problem.hint.dfeedback_displayed`` event each time a user
+selects **Check**.
+
+For more information about adding feedback to a problem, see %% in the in the
+*Building and Running an edX Course* guide.
+
+**Component**: Capa Module
+
+**Event Source**: Server
+
+**History**: This event was added on 9 Jun 2015.
+
+``event`` **Member Fields**: 
+
+.. list-table::
+   :widths: 15 15 60
+   :header-rows: 1
+
+   * - Field
+     - Type
+     - Details
+   * - ``choice_all``
+     - array
+     - For problems that have a set of possible answers defined, lists the
+       possible answers.
+   * - ``correctness``
+     - Boolean
+     - 'True' if the ``student_answer`` is correct. 'False' if the
+       ``student_answer`` is incorrect.
+   * - ``hint_label``
+     - string
+     - The optional label, such as 'Correct' or 'Incorrect', provided for the
+       feedback message.
+   * - ``hints``
+     - array
+     - For some problem types, such as checkbox problems, feedback can be
+       provided for more than one answer at a time. A ``text`` member field is
+       included for each hint that was displayed to the user.
+   * - ``module_id``
+     - string
+     - Identifier for the problem component for which the user received the
+       feedback.
+   * - ``problem_part_id``
+     - string
+     - Identifier for the specific problem within the problem component for
+       which the user received the feedback.
+   * - ``question_type``
+     - string
+     - 'stringresponse', 
+   * - ``student_answer``
+     - array
+     - The answer value supplied by the user. For problem types that accept
+       multiple answers, such as checkbox problems, every selected answer is
+       included.
+   * - ``trigger_type``
+     - string
+     - 'single' or 'compound'.  A compound hint matches an exact true/false
+       pattern across all the choices available for a checkbox problem.
+
 
 ``problem_check`` (Browser)
 *********************************
@@ -1990,7 +2085,8 @@ event type also includes the following ``context`` member field.
        * ``hint``: string; Gives optional hint. Nulls allowed. 
        * ``hintmode``: string; None, 'on_request', 'always'. Nulls allowed. 
        * ``msg``: string; Gives extra message response.
-       * ``npoints``: integer; Points awarded for this ``answer_id``. Nulls allowed.
+       * ``npoints``: integer; Points awarded for this ``answer_id``. Nulls
+         allowed.
        * ``queuestate``: dictionary; None when not queued, else ``{key:'',
          time:''}`` where ``key`` is a secret string dump of a DateTime object
          in the form '%Y%m%d%H%M%S'. Nulls allowed.
