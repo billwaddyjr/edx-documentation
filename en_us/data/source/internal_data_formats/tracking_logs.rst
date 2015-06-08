@@ -1912,7 +1912,7 @@ hint.
 
 **Event Source**: Server
 
-**History**: This event was added on 9 Jun 2015.
+**History**: This event was added on 16 Jun 2015.
 
 ``event`` **Member Fields**: 
 
@@ -1925,14 +1925,14 @@ hint.
      - Details
    * - ``hint_index``
      - integer
-     - Identifier for the hint that displayed to the user. The first hint
+     - Identifier for the hint that was displayed to the user. The first hint
        defined for a problem is identified with ``hint_index: 0``.
    * - ``hint_len``
      - integer
      - The total number of hints defined for this problem. 
    * - ``hint_text``
-     - integer
-     - The text of the hint that displayed to the user.
+     - string
+     - The text of the hint that was displayed to the user.
    * - ``module_id``
      - string
      - Identifier for the problem component for which the user requested the
@@ -1948,7 +1948,7 @@ selects **Check**.
 
 **Event Source**: Server
 
-**History**: This event was added on 9 Jun 2015.
+**History**: This event was added on 16 Jun 2015.
 
 ``event`` **Member Fields**: 
 
@@ -1973,9 +1973,11 @@ selects **Check**.
        the feedback message.
    * - ``hints``
      - array
-     - For some problem types, such as checkbox problems, feedback can be
-       provided for more than one answer at a time. A separate ``text`` member
-       field is included for each hint that displayed to the user.
+     - Contains a ``text`` member field with the feedback string that was
+       displayed to the user. For some problem types, such as checkbox
+       problems, feedback can be provided for more than one answer at a time,
+       including both correct and incorrect answers. A separate ``text`` member
+       field is included for each feedback message that was displayed.
    * - ``module_id``
      - string
      - Identifier for the problem component for which the user received the
@@ -1996,7 +1998,7 @@ selects **Check**.
    * - ``trigger_type``
      - string
      - Identifies the type of feedback elicited by the ``student_answer``
-       response. For checkbox problems, course teams can design 'compound'
+       response. For checkbox problems only, course teams can design 'compound'
        feedback that is provided when a user's response matches an exact set of
        correct and incorrect selections across all of the available choices.
        All other types of feedback are identified as 'single'.
@@ -2081,8 +2083,12 @@ event type also includes the following ``context`` member field.
      - For each problem ID value listed by ``answers``, provides:
        
        * ``correctness``: string; 'correct', 'incorrect'
-       * ``hint``: string; Gives optional hint. Nulls allowed. 
-       * ``hintmode``: string; None, 'on_request', 'always'. Nulls allowed. 
+       * ``hint``: string; Deprecated 16 Jun 2015 when the
+         ``edx.problem.hint.demandhint_displayed`` event was added. Gives
+         optional hint. Nulls allowed.
+       * ``hintmode``: string; Deprecated 16 Jun 2015 when the
+         ``edx.problem.hint.demandhint_displayed`` event was added. None,
+         'on_request', 'always'. Nulls allowed.
        * ``msg``: string; Gives extra message response.
        * ``npoints``: integer; Points awarded for this ``answer_id``. Nulls
          allowed.
@@ -3432,7 +3438,7 @@ the child module that was shown to the student.
      - Details
    * - ``child_id``
      - string
-     - ID of the module that displays to the student. 
+     - ID of the module that was displayed to the student. 
        
        **History**: Renamed on 16 Oct 2014 from ``child-id`` to ``child_id``.
        

@@ -15,7 +15,7 @@ April-June 2015
 
    * - Date
      - Change
-   * - 9 Jun 15
+   * - 16 Jun 15
      - Added new events for :ref:`problem hints<problem>` to the
        :ref:`Tracking Logs` section.
    * - 19 May 15
