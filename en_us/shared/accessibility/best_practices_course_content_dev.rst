@@ -38,15 +38,15 @@ guidelines.
 Include Text Alternatives for Non-Text Content
 =================================================
 
-For any non-text content, provide text alternatives so that it can be changed
-into other forms that people need, such as large print, braille, speech,
-symbols, or simpler language. For more information, see :ref:`Best Practices
-for Describing Images`.
+For any non-text content, provide text alternatives so that thew content can
+be changed into other forms that people need, such as large print, braille,
+speech, symbols, or simpler language. 
 
-Techniques include making sure that all images have useful alternative text
-that screen readers and other assistive technologies can read. For non-text
-tests or exercises that would be invalid if presented in text, provide text
-alternatives that at least provide descriptions of the non-text content.
+For non-text tests or exercises that would be invalid if presented in text,
+provide text alternatives that at least provide descriptions of the non-text
+content. Make sure that all images have useful alternative text that screen
+readers and other assistive technologies can read. For more information, see
+:ref:`Best Practices for Describing Images`.
 
 =================================================
 Provide Alternatives for Time-Based Media
@@ -61,22 +61,23 @@ pre-recorded sign language interpretation. For more information, see
 Make Sure Your Content is Adaptable
 =================================================
 
-Design your content so that it can be presented in different ways without
-losing information or structure. If your content includes specific
-information, structure, and relationships (such as sequence) of your content
-that is conveyed through presentation, make sure the same information,
-structure, and relationships can be programmatically determined or are
-available in text. Make sure your course content does not rely solely on
-sensory characteristics such as shape, size, visual location, orientation, or
-sound, to be understood by learners.
+Design your course content so that it can be presented in different ways
+without losing information or structure. If your content includes specific
+information, structure, and relationships (such as sequence) that is conveyed
+through presentation, make sure the same information, structure, and
+relationships can be programmatically determined or are available in text.
+
+Make sure your course content does not rely solely on sensory characteristics
+such as shape, size, visual location, orientation, or sound, to be understood
+by learners.
 
 ======================================================
 Make It Easier for Learners to See and Hear Content
 ======================================================
 
-Make the default presentation as easy to perceive as possible to people with
-disabilities, especially by making it easier for learners to distinguish
-foreground information from the background, in both visual and audio elements.
+Make the default presentation as easy to perceive as possible, especially by
+making it easier for learners to distinguish foreground information from the
+background, in both visual and audio elements.
 
 For visual elements, techniques include making sure the fonts you use are
 readable, that there is sufficient contrast between the foreground and
@@ -145,7 +146,6 @@ the first time it appears. For example, "World Health Organization (WHO)."
 The Center for Plain Language provides detailed resources on writing clearly
 and concisely, in language appropriate for your content and target audience.
 http://centerforplainlanguage.org/5-steps-to-plain-language/
-
 
 
 .. _Best Practices for Describing Images:
