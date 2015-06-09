@@ -154,84 +154,95 @@ than web pages, include the document type in the link. For example,
 Use Best Practices for Describing Images
 ************************************************
 
-Pictures, diagrams, maps, charts, and icons can present information very
-effectively. However, some visually impaired students, including people who
-use screen reader software, need text alternatives to understand the
-information conveyed by these images. The text alternative for an image
-depends on the image’s context and purpose, and might not be a simple
-description of the image’s visual characteristics. In general, for every
-graphic, edX recommends that you provide a text alternative that provides the
-equivalent information that a sighted learner would obtain from viewing the
-graphic.
+When you use images, diagrams, maps, charts, or icons in your course content,
+you must provide text alternatives that provide information equivalent to the
+visual content, or that identifies the purpose of such non-text content.
+
+The text alternative for an image depends on the image’s context and purpose,
+and might not be a simple description of the image’s visual characteristics.
+In general, for every graphic, edX recommends that you provide a text
+alternative that provides the equivalent information that a sighted learner
+would obtain from viewing the graphic.
 
 Use the following guidelines when you include images in your course.
 
-* Provide a short text description that conveys the purpose of the image,
-  unless the image conveys a concept or is the only source for the information
-  it presents, in which case provide a long text description. Note that you do
-  not need to provide a long description if the information appears elsewhere
-  on the page. For example, you do not need to describe a chart if the same
-  data appears as text in a data table.
+=========================================
+Provide Short Text Descriptions
+=========================================
+
+For each meaningful graphic, provide a short text description that describes
+the purpose of the image, unless the image conveys a concept or is the only
+source for the information it presents, in which case provide a long text
+description. Note that you do not need to provide a long description if the
+information appears elsewhere on the page. For example, you do not need to
+describe a chart if the same data appears as text in a data table.
+
+Place short descriptions in the ``alt`` attribute of the HTML image element.
+For more information about adding images, see :ref:`Add an Image to an HTML
+Component`. ::
+
+ <img src="image.jpg" alt="Photo of Ponte Vecchio">
  
- * For a representative image, such as a photograph of the Ponte Vecchio, a
-   short description could be “Photo of Ponte Vecchio.” If the photograph’s
-   purpose is to provide detailed information about the location, the long
-   description should be more specific: “Photo of Ponte Vecchio showing its
-   three stone arches and the Arno River.”
+* For a representative image, such as a photograph of the Ponte Vecchio, a
+  short description could be “Photo of Ponte Vecchio.” If the photograph’s
+  purpose is to provide detailed information about the location, the long
+  description should be more specific: “Photo of Ponte Vecchio showing its
+  three stone arches and the Arno River.”
 
- * For a chart, diagram, or illustration, the short description might be
-   “Illlustration of Ponte Vecchio.” The long description should include the
-   details conveyed visually, such as dimensions and materials used.
+* For a chart, diagram, or illustration, the short description might be
+  “Illlustration of Ponte Vecchio.” The long description should include the
+  details conveyed visually, such as dimensions and materials used.
 
- * For a map, a short description might be “Map showing location of Ponte
-   Vecchio.” If the map is intended to provide directions to the bridge, the
-   long description should provide text directions.
+* For a map, a short description might be “Map showing location of Ponte
+  Vecchio.” If the map is intended to provide directions to the bridge, the
+  long description should provide text directions.
  
- * For icons, the short description should be equivalent to the information
-   that the icon provides. For example, for a Course Syllabus link containing
-   a PDF icon, the text equivalent for the icon would be “PDF,” which would be
-   read as “Course Syllabus PDF.”
+* For an icon, the short description should be equivalent to the information
+  that the icon provides. For example, for a Course Syllabus link containing
+  an EPUB icon, the text equivalent for the icon would be “EPUB,” which would
+  be read as “Course Syllabus EPUB.”
 
- * For an image that serves primarily as a link to another web page, the short
-   description should describe the link’s destination, not the image. For
-   example, an image of a question mark that serves as a link to a Help page
-   should be described as “help,” not “question mark.”
+* For an image that serves primarily as a link to another web page, the short
+  description should describe the link’s destination, not the image. For
+  example, an image of a question mark that serves as a link to a Help page
+  should be described as “help,” not “question mark.”
 
- * Images that do not provide information do not need text descriptions. For
-   example, a PDF icon that is followed by link text reading “Course Syllabus
-   (PDF)” does not need a description. Another example is a banner graphic
-   whose function is purely aesthetic.
+=========================================
+Provide Long Text Descriptions
+=========================================
+
+Consider using a caption to display long descriptions so that the information
+is available to all learners. In the following example, the image element
+includes the short description as the ``alt`` attribute and the paragraph
+element includes the long description. ::
+
+ <img src="image.jpg" alt="Photo of Ponte Vecchio">
+ <p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>
+  
+Alternatively, provide long descriptions by creating an additional unit or
+downloadable file that contains the descriptive text and providing a link to
+the unit or file below the image. ::
  
-* Include the short description in the ``alt`` attribute of the HTML image
-  element (see :ref:`Add an Image to an HTML Component` for more
-  information about adding images). ::
+ <img src="image.jpg" alt="Illustration of Ponte Vecchio">
+ <p><a href="description.html">Description of Ponte Vecchio Illustration</a></p>
 
-   <img src="image.jpg" alt="Photo of Ponte Vecchio">
+===================================================
+Handle Non-Informative Images Appropriately
+===================================================
 
+Images that do not provide information, including purely decorative images, do
+not need text descriptions. For example, an icon that is followed by link text
+that reads “Course Syllabus (EPUB)” does not need alternative text. 
 
-* Include an empty ``alt`` attribute for non-informative images. An empty
-  ``alt`` attribute tells screen reader software to skip the image. :: 
+For non-informative images that should be skipped by screen reading software,
+include an ``alt`` attribute but leave it with an empty value. ::
 
    <img src="image.jpg" alt="">
 
-  If image elements do not include an ``alt`` attribute at all, screen reader
-  software might skip the image, announce the image filename, or, in the case
-  of a linked image, announce the link URL. 
-
-* Consider using a caption to display long descriptions so that the
-  information is available to all learners. In the following example, the
-  image element includes the short description as the ``alt`` attribute and the
-  paragraph element includes the long description. ::
-
-   <img src="image.jpg" alt="Photo of Ponte Vecchio">
-   <p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>
-  
-* Alternatively, provide long descriptions by creating an additional unit or
-  downloadable file that contains the descriptive text and providing a link to
-  the unit or file below the image. ::
- 
-   <img src="image.jpg" alt="Illustration of Ponte Vecchio">
-   <p><a href="description.html">Description of Ponte Vecchio Illustration</a></p>
+If image elements do not include an ``alt`` attribute at all, depending on the
+specific screen reader software, a screen reader might skip the image,
+announce the image filename, or, in the case of a linked image, announce the
+link URL.
 
 
 =====================================================
