@@ -25,15 +25,15 @@ Who Are Our Learners?
 
 In the following sections, we outline guidelines for creating and delivering
 course content that allows students to use built-in accessibility
-functionality (such as magnification and zoom features), assistive
+functionality (such as text-to-speech and magnification features), assistive
 technologies, and alternative formats. These practices consider learners with
 diverse needs, such as those in the following list.
 
 * Blind learners who use a screen reader, which reads page text aloud, or a
-  Braille display device, which renders page text in Braille.
+  Braille display device, which renders page text in refreshable Braille.
 
-* Low-vision learners who use screen magnification software to enlarge text
-  and other onscreen content.
+* Low-vision learners who use screen magnification software to enlarge or
+  modify the contrast of text and other onscreen content.
 
 * Learners with vision impairments, such as difficulty seeing in low-light
   conditions, who modify their browser or operating system to change
@@ -50,8 +50,8 @@ diverse needs, such as those in the following list.
   keyboard easier to use.
 
 * Learners with hearing impairments who cannot access audio content and need
-  the equivalent information in an alternative format, such as captions or a
-  transcript.
+  the equivalent information in an alternative format, such as captions.
+
 
 *****************************
 Removing Barriers to Learning
@@ -60,11 +60,11 @@ Removing Barriers to Learning
 EdX highly recommends that you implement the best practices in this document
 and in other resources. If you cannot easily address any of these barriers to
 providing accessible course content, EdX recommends that you consult with
-resources at your organization such as Disability Services, Assistive
-Technology, or Accessibility.
+resources at your organization such as Disability Services, or assistive
+technology and accessibility specialists.
 
-For additional information about accessibility and accessibility standards,
-refer to these resources.
+The following resources might also assist you in producing accessible course
+content.
 
 * User Agent Accessibility Guidelines (UAAG) (http://www.w3.org/WAI/intro/uaag.php#whatis)
 * Authoring Tool Accessibility Guidelines (ATAG) (http://www.w3.org/WAI/intro/atag.php)
