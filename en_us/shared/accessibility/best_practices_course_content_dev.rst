@@ -34,27 +34,59 @@ information being presented; it cannot be invisible to all of their senses.
 To produce content that is perceivable by all learners, follow these
 guidelines.
 
-* Design your content so that it can be presented in different ways without
-  losing information or structure. For example, make sure learners can
-  successfully 
+=================================================
+Include Text Alternatives for Non-Text Content
+=================================================
 
-* For any non-text content, provide text alternatives so that it can be
-  changed into other forms that people need, such as large print, braille,
-  speech, symbols, or simpler language. 
+For any non-text content, provide text alternatives so that it can be changed
+into other forms that people need, such as large print, braille, speech,
+symbols, or simpler language. For more information, see :ref:`Best Practices
+for Describing Images`.
 
-  Techniques include making sure that all images have useful alternative text
-  that screen readers and other assistive technologies can read. For non-text
-  tests or exercises that would be invalid if presented in text, provide text
-  alternatives that at least provide descriptions of the non-text content.
+Techniques include making sure that all images have useful alternative text
+that screen readers and other assistive technologies can read. For non-text
+tests or exercises that would be invalid if presented in text, provide text
+alternatives that at least provide descriptions of the non-text content.
 
-* For time-based media, including pre-recorded audio or video content, provide
-  alternative equivalent information, such as captions, audio description or
-  pre-recorded sign language interpretation. For more information, see
-  :ref:`Creating Accessible Media`.
+=================================================
+Provide Alternatives for Time-Based Media
+=================================================
 
+For time-based media, including pre-recorded audio or video content, provide
+alternative equivalent information, such as captions, audio description or
+pre-recorded sign language interpretation. For more information, see
+:ref:`Creating Accessible Media`.
 
+=================================================
+Make Sure Your Content is Adaptable
+=================================================
 
+Design your content so that it can be presented in different ways without
+losing information or structure. If your content includes specific
+information, structure, and relationships (such as sequence) of your content
+that is conveyed through presentation, make sure the same information,
+structure, and relationships can be programmatically determined or are
+available in text. Make sure your course content does not rely solely on
+sensory characteristics such as shape, size, visual location, orientation, or
+sound, to be understood by learners.
 
+======================================================
+Make It Easier for Learners to See and Hear Content
+======================================================
+
+Make the default presentation as easy to perceive as possible to people with
+disabilities, especially by making it easier for learners to distinguish
+foreground information from the background, in both visual and audio elements.
+
+For visual elements, techniques include making sure the fonts you use are
+readable, that there is sufficient contrast between the foreground and
+background. Do not use color as the sole means of visually distinguishing an
+element or conveying critical information. When images contain text, make sure
+that the text has a font size of at least 14 points and has good contrast with
+the background.
+
+For audio elements, make sure foreground sounds are sufficiently louder than
+background sounds.
 
 
 .. _Make Sure Your Course Content is Readable:
@@ -63,48 +95,52 @@ guidelines.
 Make Sure Your Course Content is Readable
 ************************************************
 
-EdX courses have a global and diverse audience, including learners whose
-native language is not the language in which you created your course or
-learners who have a disability that affects reading, such as dyslexia or a
-visual impairment.
+Make sure your course content is readable and understandable. EdX courses have
+a global and diverse audience, including learners whose native language is not
+the language in which you created your course, and learners who have a
+disability that affects reading, such as dyslexia or a visual impairment.
 
 Learners will be better positioned to access concepts in your content if you
 write in clear, straightforward language and the content is well structured.
 Use appropriate terminology to your subject area, but keep it as clear and
 unambiguous as possible.
 
-To produce content that is more readable by all learners, follow these
+To produce content that is more understandable for all learners, follow these
 guidelines.
 
-* Make the names of elements such as course sections, subsections, units,
-  components, and discussion topics useful and easy to skim. Make an element's
-  name descriptive of its content, and put the important information first in
-  the name. These names are used in navigation menus, page headings, and section
-  headings, and are signposts that help learners navigate your course and read
-  course content. Putting important keywords first in the names of menus and
-  headings particularly helps screen reader users, who can more quickly assess
-  the relevance of a link or heading.
+=========================================
+Provide Clear and Consistent Structure
+=========================================
 
-* When you create written learning resources, break text into sections using
-  HTML elements such as headings, paragraphs, and lists. Long blocks of unbroken
-  text are a barrier to most readers. Segmented content is more inviting and is
-  easier to navigate and search. See :ref:`Best Practices for HTML Markup` for
-  guidance on creating accessible HTML.
+Name your course sections, subsections, units, components, and discussion topics in
+a consistent way, and make sure the names are useful and easy to skim. Make an
+element's name descriptive of its content, and put the important keyword
+information first in the name. These names are used in navigation menus, page
+headings, and section headings; they are signposts that help learners navigate
+your course and read course content.
 
-* Avoid jargon. If unfamiliar words or phrases are relevant to the subject,
-  explain them when they are first used, and include a glossary with your course
-  materials. When using an abbreviation or acronym, write out the phrase the
-  first time it appears. For example, "World Health Organization (WHO)."
+When you create written learning resources, break text into sections using
+HTML elements such as headings, paragraphs, and lists. Long blocks of unbroken
+text are a barrier to most readers. Segmented content is more inviting and is
+easier to navigate and search. See :ref:`Best Practices for HTML Markup` for
+guidance on creating accessible HTML.
 
-* Use link text that clearly explains the link destination (for example,
-  "Review the Course Syllabus"). Avoid using constructs such as “Review
-  the Course Syllabus here”, with only the word "here" serving as link text.
-  For links that point to documents rather than web pages, include the
-  document type in the link. For example, "Course Syllabus (PDF)").
+When you provide links to external material, use link text that clearly
+explains the link destination (for example, "Review the Course Syllabus").
+Avoid using constructs such as “Review the Course Syllabus here”, with only
+the word "here" serving as link text. For links that point to documents rather
+than web pages, include the document type in the link. For example,
+"Supplemental Reading for Week 1 (EPUB)").
 
-==========================
-Readability Resources
-==========================
+
+=========================================
+Write Simply and Clearly
+=========================================
+
+Avoid jargon. If unfamiliar words or phrases are relevant to the subject,
+explain them when they are first used, and include a glossary with your course
+materials. When you use an abbreviation or acronym, provide the full phrase
+the first time it appears. For example, "World Health Organization (WHO)."
 
 The Center for Plain Language provides detailed resources on writing clearly
 and concisely, in language appropriate for your content and target audience.
