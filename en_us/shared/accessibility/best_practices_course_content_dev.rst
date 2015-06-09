@@ -98,13 +98,12 @@ Make Sure Your Course Content is Understandable
 
 Make sure your course content is readable and understandable. EdX courses have
 a global and diverse audience, including learners whose native language is not
-the language in which you created your course, and learners who have a
+the language in which you created your course, as well as learners who have a
 disability that affects reading, such as dyslexia or a visual impairment.
 
 Learners will be better positioned to access concepts in your content if you
 write in clear, straightforward language and the content is well structured.
-Use appropriate terminology to your subject area, but keep it as clear and
-unambiguous as possible.
+
 
 =========================================
 Write Simply and Clearly
@@ -123,16 +122,16 @@ http://centerforplainlanguage.org/5-steps-to-plain-language/
 Make Your Course Easy to Navigate
 =========================================
 
-One aspect of making your course understandable is making sure learners can
-easily grasp its structure, find content, and determine where they are within
-the course.
+One aspect of making your course understandable is making sure that learners
+can easily grasp its structure, find content, and determine where they are
+within the course.
 
-Name your course sections, subsections, units, components, and discussion topics in
-a consistent way, and make sure the names are useful and easy to skim. Make an
-element's name descriptive of its content, and put the important keyword
-information first in the name. These names are used in navigation menus, page
-headings, and section headings; they are signposts that help learners navigate
-your course and read course content.
+Name your course sections, subsections, units, components, and discussion
+topics in a consistent way, and make sure the names are useful and easy to
+skim. Make an element's name descriptive of its content, and put important
+keyword information first in the name. These names are used in navigation
+menus, page headings, and section headings; they are signposts that help
+learners to navigate your course and read course content.
 
 When you create written learning resources, break text into sections using
 HTML elements such as headings, paragraphs, and lists. Long blocks of unbroken
