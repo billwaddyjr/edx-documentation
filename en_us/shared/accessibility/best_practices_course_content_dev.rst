@@ -38,7 +38,7 @@ guidelines.
 Include Text Alternatives for Non-Text Content
 =================================================
 
-For any non-text content, provide text alternatives so that thew content can
+For any non-text content, provide text alternatives so that the content can
 be changed into other forms that people need, such as large print, braille,
 speech, symbols, or simpler language. 
 
@@ -90,10 +90,10 @@ For audio elements, make sure foreground sounds are sufficiently louder than
 background sounds.
 
 
-.. _Make Sure Your Course Content is Readable:
+.. _Make Sure Your Course Content is Understandable:
 
 ************************************************
-Make Sure Your Course Content is Readable
+Make Sure Your Course Content is Understandable
 ************************************************
 
 Make sure your course content is readable and understandable. EdX courses have
@@ -106,12 +106,26 @@ write in clear, straightforward language and the content is well structured.
 Use appropriate terminology to your subject area, but keep it as clear and
 unambiguous as possible.
 
-To produce content that is more understandable for all learners, follow these
-guidelines.
+=========================================
+Write Simply and Clearly
+=========================================
+
+Avoid jargon. If unfamiliar words or phrases are relevant to the subject,
+explain them when they are first used, and include a glossary with your course
+materials. When you use an abbreviation or acronym, provide the full phrase
+the first time it appears. For example, "World Health Organization (WHO)."
+
+The Center for Plain Language provides detailed resources on writing clearly
+and concisely, in language appropriate for your content and target audience.
+http://centerforplainlanguage.org/5-steps-to-plain-language/
 
 =========================================
-Provide Clear and Consistent Structure
+Make Your Course Easy to Navigate
 =========================================
+
+One aspect of making your course understandable is making sure learners can
+easily grasp its structure, find content, and determine where they are within
+the course.
 
 Name your course sections, subsections, units, components, and discussion topics in
 a consistent way, and make sure the names are useful and easy to skim. Make an
@@ -132,20 +146,6 @@ Avoid using constructs such as “Review the Course Syllabus here”, with only
 the word "here" serving as link text. For links that point to documents rather
 than web pages, include the document type in the link. For example,
 "Supplemental Reading for Week 1 (EPUB)").
-
-
-=========================================
-Write Simply and Clearly
-=========================================
-
-Avoid jargon. If unfamiliar words or phrases are relevant to the subject,
-explain them when they are first used, and include a glossary with your course
-materials. When you use an abbreviation or acronym, provide the full phrase
-the first time it appears. For example, "World Health Organization (WHO)."
-
-The Center for Plain Language provides detailed resources on writing clearly
-and concisely, in language appropriate for your content and target audience.
-http://centerforplainlanguage.org/5-steps-to-plain-language/
 
 
 .. _Best Practices for Describing Images:
