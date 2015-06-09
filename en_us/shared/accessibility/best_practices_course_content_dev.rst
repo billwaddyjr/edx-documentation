@@ -238,20 +238,20 @@ Use the following guidelines when you include images in your course.
 Accessible Images Resources
 =====================================================
 
-* A decision tree for choosing appropriate alternative text for images (Dey
-  Alexander) http://www.4syllables.com.au/2010/12/text-alternatives-decision-
-  tree/
+* A `decision tree <http://www.4syllables.com.au/2010/12/text-alternatives-decision-tree/>`_ for choosing appropriate alternative text for images (Dey Alexander).
 
-* General guidance on appropriate use of alternative text for images (WebAim) 
-  http://webaim.org/techniques/alttext/
+* `WebAim <http://webaim.org/techniques/alttext/>`_ provides general guidance
+  on the appropriate use of alternative text for images.
 
 * A more detailed description of HTML5 techniques for providing useful
-  alternative text for images. http://dev.w3.org/html5/alt-techniques/
+  alternative text for images from `W3C <http://dev.w3.org/html5/alt-
+  techniques/>`_.
 
-* The DIAGRAM Center, established by the US Department of Education (Office of
-  Special Education Programs), provides guidance on ways to make it easier,
-  faster, and more cost effective to create and use accessible images.
-  http://www.diagramcenter.org/webinars.html
+* `The DIAGRAM Center <http://www.diagramcenter.org/webinars.html>`_,
+  established by the US Department of Education (Office of Special Education
+  Programs), provides guidance on ways to make it easier, faster, and more
+  cost effective to create and use accessible images.
+  
 
 
 .. _Creating Accessible PDFs:
