@@ -19,60 +19,42 @@ We welcome any comments and questions.
    :depth: 1
 
 
-.. _Universal Design for Learning:
+.. _Make Sure Your Course Content is Perceivable:
 
 ************************************************
-Apply Universal Design for Learning
+Make Sure Your Course Content is Perceivable
 ************************************************
 
-Universal Design for Learning focuses on delivering courses in a format so
-that as many of your learners as possible can successfully interact with the
-learning resources and activities you provide them, without compromising on
-pedagogic rigor and quality.
+The `WCAG 2.0 <http://www.w3.org/TR/WCAG20/#cc1>`_ guidelines are organized
+around several principles, one of which is that web content must be
+perceivable. Information and user interface components must be presentable to
+users in ways they can perceive. Users must be able to perceive the
+information being presented; it cannot be invisible to all of their senses.
 
-The principles of Universal Design for Learning can be summarized by the
-following points.
-
-#. Present information and content in various ways. 
-#. Provide more than one way for students to express what they know.
-#. Stimulate interest and motivation for learning.
-
-Course teams can apply these principles in course design by following several
+To produce content that is perceivable by all learners, follow these
 guidelines.
 
-* Design resources and activities that can be accessed by learners in
-  a variety of ways. For example, if there is a text component, provide the
-  ability to enlarge the font size or change the text color. For images and
-  diagrams, always provide an equivalent text description. For video, include
-  text captions or a transcript as well as an audio track.
+* Design your content so that it can be presented in different ways without
+  losing information or structure. For example, make sure learners can
+  successfully 
 
-* Provide multiple ways for learners to engage with information and
-  demonstrate their knowledge. This is particularly important to keep in mind
-  as you design activities and assessments.
- 
-* Identify activities that require specific sensory or physical capability and
-  for which it might be difficult or impossible to accommodate the
-  accessibility needs of learners. For example, an activity that requires
-  learners to identify objects by color might cause difficulties for learners
-  with visual impairments. In these cases, consider whether there is a
-  pedagogical justification for the activity being designed in that way. If
-  there is a justification, communicate these requirements to prospective
-  learners in the course description and establish a plan for responding to
-  learners who encounter barriers. If there is no justification for the
-  requirements, edX recommends that you redesign the learning activities to be
-  more flexible and broadly accessible.
- 
-=======================================
-Universal Design for Learning Resources
-=======================================
+* For any non-text content, provide text alternatives so that it can be
+  changed into other forms that people need, such as large print, braille,
+  speech, symbols, or simpler language. 
 
-* Delivering Accessible Digital Learning (JISC Techdis) provides a useful
-  overview of an inclusive approach to course design.
-  http://www.jisctechdis.ac.uk/techdis/resources/accessiblecontent
+  Techniques include making sure that all images have useful alternative text
+  that screen readers and other assistive technologies can read. For non-text
+  tests or exercises that would be invalid if presented in text, provide text
+  alternatives that at least provide descriptions of the non-text content.
 
-* The National Center on Universal Design for Learning provides a helpful
-  overview on Universal Design for Learning.
-  http://www.udlcenter.org/implementation/postsecondary
+* For time-based media, including pre-recorded audio or video content, provide
+  alternative equivalent information, such as captions, audio description or
+  pre-recorded sign language interpretation. For more information, see
+  :ref:`Creating Accessible Media`.
+
+
+
+
 
 
 .. _Make Sure Your Course Content is Readable:
@@ -127,6 +109,113 @@ Readability Resources
 The Center for Plain Language provides detailed resources on writing clearly
 and concisely, in language appropriate for your content and target audience.
 http://centerforplainlanguage.org/5-steps-to-plain-language/
+
+
+
+.. _Best Practices for Describing Images:
+
+************************************************
+Use Best Practices for Describing Images
+************************************************
+
+Pictures, diagrams, maps, charts, and icons can present information very
+effectively. However, some visually impaired students, including people who
+use screen reader software, need text alternatives to understand the
+information conveyed by these images. The text alternative for an image
+depends on the image’s context and purpose, and might not be a simple
+description of the image’s visual characteristics. In general, for every
+graphic, edX recommends that you provide a text alternative that provides the
+equivalent information that a sighted learner would obtain from viewing the
+graphic.
+
+Use the following guidelines when you include images in your course.
+
+* Provide a short text description that conveys the purpose of the image,
+  unless the image conveys a concept or is the only source for the information
+  it presents, in which case provide a long text description. Note that you do
+  not need to provide a long description if the information appears elsewhere
+  on the page. For example, you do not need to describe a chart if the same
+  data appears as text in a data table.
+ 
+ * For a representative image, such as a photograph of the Ponte Vecchio, a
+   short description could be “Photo of Ponte Vecchio.” If the photograph’s
+   purpose is to provide detailed information about the location, the long
+   description should be more specific: “Photo of Ponte Vecchio showing its
+   three stone arches and the Arno River.”
+
+ * For a chart, diagram, or illustration, the short description might be
+   “Illlustration of Ponte Vecchio.” The long description should include the
+   details conveyed visually, such as dimensions and materials used.
+
+ * For a map, a short description might be “Map showing location of Ponte
+   Vecchio.” If the map is intended to provide directions to the bridge, the
+   long description should provide text directions.
+ 
+ * For icons, the short description should be equivalent to the information
+   that the icon provides. For example, for a Course Syllabus link containing
+   a PDF icon, the text equivalent for the icon would be “PDF,” which would be
+   read as “Course Syllabus PDF.”
+
+ * For an image that serves primarily as a link to another web page, the short
+   description should describe the link’s destination, not the image. For
+   example, an image of a question mark that serves as a link to a Help page
+   should be described as “help,” not “question mark.”
+
+ * Images that do not provide information do not need text descriptions. For
+   example, a PDF icon that is followed by link text reading “Course Syllabus
+   (PDF)” does not need a description. Another example is a banner graphic
+   whose function is purely aesthetic.
+ 
+* Include the short description in the ``alt`` attribute of the HTML image
+  element (see :ref:`Add an Image to an HTML Component` for more
+  information about adding images). ::
+
+   <img src="image.jpg" alt="Photo of Ponte Vecchio">
+
+
+* Include an empty ``alt`` attribute for non-informative images. An empty
+  ``alt`` attribute tells screen reader software to skip the image. :: 
+
+   <img src="image.jpg" alt="">
+
+  If image elements do not include an ``alt`` attribute at all, screen reader
+  software might skip the image, announce the image filename, or, in the case
+  of a linked image, announce the link URL. 
+
+* Consider using a caption to display long descriptions so that the
+  information is available to all learners. In the following example, the
+  image element includes the short description as the ``alt`` attribute and the
+  paragraph element includes the long description. ::
+
+   <img src="image.jpg" alt="Photo of Ponte Vecchio">
+   <p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>
+  
+* Alternatively, provide long descriptions by creating an additional unit or
+  downloadable file that contains the descriptive text and providing a link to
+  the unit or file below the image. ::
+ 
+   <img src="image.jpg" alt="Illustration of Ponte Vecchio">
+   <p><a href="description.html">Description of Ponte Vecchio Illustration</a></p>
+
+
+=====================================================
+Accessible Images Resources
+=====================================================
+
+* A decision tree for choosing appropriate alternative text for images (Dey
+  Alexander) http://www.4syllables.com.au/2010/12/text-alternatives-decision-
+  tree/
+
+* General guidance on appropriate use of alternative text for images (WebAim) 
+  http://webaim.org/techniques/alttext/
+
+* A more detailed description of HTML5 techniques for providing useful
+  alternative text for images. http://dev.w3.org/html5/alt-techniques/
+
+* The DIAGRAM Center, established by the US Department of Education (Office of
+  Special Education Programs), provides guidance on ways to make it easier,
+  faster, and more cost effective to create and use accessible images.
+  http://www.diagramcenter.org/webinars.html
 
 
 .. _Creating Accessible PDFs:
@@ -523,111 +612,6 @@ Accessible Custom Content Resources
   http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html
 
 
-.. _Best Practices for Describing Images:
-
-************************************************
-Use Best Practices for Describing Images
-************************************************
-
-Pictures, diagrams, maps, charts, and icons can present information very
-effectively. However, some visually impaired students, including people who
-use screen reader software, need text alternatives to understand the
-information conveyed by these images. The text alternative for an image
-depends on the image’s context and purpose, and might not be a simple
-description of the image’s visual characteristics. In general, for every
-graphic, edX recommends that you provide a text alternative that provides the
-equivalent information that a sighted learner would obtain from viewing the
-graphic.
-
-Use the following guidelines when you include images in your course.
-
-* Provide a short text description that conveys the purpose of the image,
-  unless the image conveys a concept or is the only source for the information
-  it presents, in which case provide a long text description. Note that you do
-  not need to provide a long description if the information appears elsewhere
-  on the page. For example, you do not need to describe a chart if the same
-  data appears as text in a data table.
- 
- * For a representative image, such as a photograph of the Ponte Vecchio, a
-   short description could be “Photo of Ponte Vecchio.” If the photograph’s
-   purpose is to provide detailed information about the location, the long
-   description should be more specific: “Photo of Ponte Vecchio showing its
-   three stone arches and the Arno River.”
-
- * For a chart, diagram, or illustration, the short description might be
-   “Illlustration of Ponte Vecchio.” The long description should include the
-   details conveyed visually, such as dimensions and materials used.
-
- * For a map, a short description might be “Map showing location of Ponte
-   Vecchio.” If the map is intended to provide directions to the bridge, the
-   long description should provide text directions.
- 
- * For icons, the short description should be equivalent to the information
-   that the icon provides. For example, for a Course Syllabus link containing
-   a PDF icon, the text equivalent for the icon would be “PDF,” which would be
-   read as “Course Syllabus PDF.”
-
- * For an image that serves primarily as a link to another web page, the short
-   description should describe the link’s destination, not the image. For
-   example, an image of a question mark that serves as a link to a Help page
-   should be described as “help,” not “question mark.”
-
- * Images that do not provide information do not need text descriptions. For
-   example, a PDF icon that is followed by link text reading “Course Syllabus
-   (PDF)” does not need a description. Another example is a banner graphic
-   whose function is purely aesthetic.
- 
-* Include the short description in the ``alt`` attribute of the HTML image
-  element (see :ref:`Add an Image to an HTML Component` for more
-  information about adding images). ::
-
-   <img src="image.jpg" alt="Photo of Ponte Vecchio">
-
-
-* Include an empty ``alt`` attribute for non-informative images. An empty
-  ``alt`` attribute tells screen reader software to skip the image. :: 
-
-   <img src="image.jpg" alt="">
-
-  If image elements do not include an ``alt`` attribute at all, screen reader
-  software might skip the image, announce the image filename, or, in the case
-  of a linked image, announce the link URL. 
-
-* Consider using a caption to display long descriptions so that the
-  information is available to all learners. In the following example, the
-  image element includes the short description as the ``alt`` attribute and the
-  paragraph element includes the long description. ::
-
-   <img src="image.jpg" alt="Photo of Ponte Vecchio">
-   <p>Photo of Ponte Vecchio showing its three stone arches and the Arno river</p>
-  
-* Alternatively, provide long descriptions by creating an additional unit or
-  downloadable file that contains the descriptive text and providing a link to
-  the unit or file below the image. ::
- 
-   <img src="image.jpg" alt="Illustration of Ponte Vecchio">
-   <p><a href="description.html">Description of Ponte Vecchio Illustration</a></p>
-
-
-=====================================================
-Accessible Images Resources
-=====================================================
-
-* A decision tree for choosing appropriate alternative text for images (Dey
-  Alexander) http://www.4syllables.com.au/2010/12/text-alternatives-decision-
-  tree/
-
-* General guidance on appropriate use of alternative text for images (WebAim) 
-  http://webaim.org/techniques/alttext/
-
-* A more detailed description of HTML5 techniques for providing useful
-  alternative text for images. http://dev.w3.org/html5/alt-techniques/
-
-* The DIAGRAM Center, established by the US Department of Education (Office of
-  Special Education Programs), provides guidance on ways to make it easier,
-  faster, and more cost effective to create and use accessible images.
-  http://www.diagramcenter.org/webinars.html
-
 
 .. _Creating Accessible Media:
 
@@ -768,3 +752,60 @@ HTML Markup Resources
   tables with the appropriate semantic structure so that screen readers can
   correctly present the information (WebAIM).
   http://webaim.org/techniques/tables/data
+
+
+.. _Universal Design for Learning:
+
+************************************************
+Apply Universal Design for Learning
+************************************************
+
+Universal Design for Learning focuses on delivering courses in a format so
+that as many of your learners as possible can successfully interact with the
+learning resources and activities you provide them, without compromising on
+pedagogic rigor and quality.
+
+The principles of Universal Design for Learning can be summarized by the
+following points.
+
+#. Present information and content in various ways. 
+#. Provide more than one way for students to express what they know.
+#. Stimulate interest and motivation for learning.
+
+Course teams can apply these principles in course design by following several
+guidelines.
+
+* Design resources and activities that can be accessed by learners in
+  a variety of ways. For example, if there is a text component, provide the
+  ability to enlarge the font size or change the text color. For images and
+  diagrams, always provide an equivalent text description. For video, include
+  text captions or a transcript as well as an audio track.
+
+* Provide multiple ways for learners to engage with information and
+  demonstrate their knowledge. This is particularly important to keep in mind
+  as you design activities and assessments.
+ 
+* Identify activities that require specific sensory or physical capability and
+  for which it might be difficult or impossible to accommodate the
+  accessibility needs of learners. For example, an activity that requires
+  learners to identify objects by color might cause difficulties for learners
+  with visual impairments. In these cases, consider whether there is a
+  pedagogical justification for the activity being designed in that way. If
+  there is a justification, communicate these requirements to prospective
+  learners in the course description and establish a plan for responding to
+  learners who encounter barriers. If there is no justification for the
+  requirements, edX recommends that you redesign the learning activities to be
+  more flexible and broadly accessible.
+ 
+=======================================
+Universal Design for Learning Resources
+=======================================
+
+* Delivering Accessible Digital Learning (JISC Techdis) provides a useful
+  overview of an inclusive approach to course design.
+  http://www.jisctechdis.ac.uk/techdis/resources/accessiblecontent
+
+* The National Center on Universal Design for Learning provides a helpful
+  overview on Universal Design for Learning.
+  http://www.udlcenter.org/implementation/postsecondary
+
