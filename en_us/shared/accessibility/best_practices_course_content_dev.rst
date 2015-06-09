@@ -162,7 +162,9 @@ The text alternative for an image depends on the image’s context and purpose,
 and might not be a simple description of the image’s visual characteristics.
 In general, for every graphic, edX recommends that you provide a text
 alternative that provides the equivalent information that a sighted learner
-would obtain from viewing the graphic.
+would obtain from viewing the graphic. If the image contains words that are
+important for understanding the content, include the words in the text
+alternative.
 
 Use the following guidelines when you include images in your course.
 
