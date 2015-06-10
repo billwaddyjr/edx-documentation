@@ -428,34 +428,22 @@ Accessible PDF Resources
 ===============================
 
 
-* Microsoft provides detailed guidance on generating accessible PDFs from
-  Microsoft Office applications, including Word, Excel, and PowerPoint
-  http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-
-  HA102478227.aspx
+* Microsoft provides detailed `guidance on generating accessible PDFs <http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx>`_ from Microsoft Office applications, including Word, Excel, and PowerPoint.
+  
 
-* Adobe provides a detailed accessibility PDF repair workflow using Acrobat
-  XI. http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat
-  /pdfs/acrobat-xi-pdf-accessibility-repair-workflow.pdf
+* Adobe provides a detailed `accessibility PDF repair workflow <http://www.adobe.com/content/dam/Adobe/en/accessibility/products/acrobat/pdfs/acrobat-xi-pdf-accessibility-repair-workflow.pdf>`_ using Acrobat XI. 
 
-* Adobe Accessibility (Adobe) is a comprehensive collection of resources on
-  PDF authoring and repair, using Adobe’s products.
-  http://www.adobe.com/accessibility.html
-
+* `Adobe Accessibility <http://www.adobe.com/accessibility.html>`_ is a comprehensive collection of resources on PDF authoring and repair, using Adobe’s products.
+  
 .. This UWash link is behind a login page. Delete or replace? 
 
-* PDF Accessibility (University of Washington) provides a step-by-step guide
-  to creating accessible PDFs from different sources and using different
-  applications. http://www.washington.edu/accessibility/pdf/
+* `PDF Accessibility <http://www.washington.edu/accessibility/pdf/>`_ (University of Washington) provides a step-by-step guide to creating accessible PDFs from different sources and using different applications. 
 
-* PDF Accessibility (WebAIM) provides a detailed and illustrated guide on
-  creating accessible PDFs. http://webaim.org/techniques/acrobat/
+* `PDF Accessibility <http://webaim.org/techniques/acrobat/>`_ (WebAIM) provides a detailed and illustrated guide on creating accessible PDFs. 
 
-* The National Center of Disability and Access to Education has a collection
-  of one-page “cheat sheets” on accessible document authoring.
-  http://ncdae.org/resources/cheatsheets/
-
-* The Accessible Digital Office Document (ADOD) Project provides guidance on
-  creating accessible Office documents. http://adod.idrc.ocad.ca/
+* The National Center of Disability and Access to Education has a `collection <http://ncdae.org/resources/cheatsheets/>`_ of one-page “cheat sheets” on accessible document authoring.
+  
+* The `Accessible Digital Office Document (ADOD) Project <http://adod.idrc.ocad.ca/>`_ provides guidance on creating accessible Office documents. 
 
 .. _Best Practices for Math Content:
 
@@ -470,7 +458,7 @@ Do not create images of equations instead of including text equations. Math
 images cannot be modified by people who need a larger or high contrast
 display, and cannot be read by screen reader software.
 
-EdX uses MathJax (https://www.mathjax.org) to render math content in a format
+EdX uses `MathJax <https://www.mathjax.org>`_ to render math content in a format
 that is clear, readable, and accessible to people who use screen readers.
 MathJax works together with math notation such as LaTeX and MathML to render
 mathematical equations as text instead of images. EdX recommends that you use
@@ -480,19 +468,17 @@ MathJax to display your math content.
 Accessible Mathematical Content Resources
 ======================================================
 
-* The University of Washington’s DO-IT project provides guidance on creating
-  accessible math content. 
-  http://www.washington.edu/doit/are-there-guidelines-creating-accessible-math?465=
+* The `DO-IT project <http://www.washington.edu/doit/are-there-guidelines-creating-accessible-math?465=>`_ from the University of Washington provides guidance on creating accessible math content.
 
-* AccessSTEM provides guidance on creating accessible science, technology,
-  engineering and math educational content.
-  http://www.washington.edu/doit/programs/accessstem/overview
+* `AccessSTEM <http://www.washington.edu/doit/programs/accessstem/overview>`_
+  provides guidance on creating accessible science, technology, engineering
+  and math educational content.
+  
+* `MathJax <http://www.mathjax.org>`_ provides guidance on creating accessible
+  pages with their display engine.
 
-* MathJax provides guidance on creating accessible pages with their display
-  engine. http://www.mathjax.org
-
-* The Design Science News blog shares information about making math
-  accessible. http://news.dessci.com/accessible-math
+* The `Design Science News blog <http://news.dessci.com/accessible-math>`_
+  shares information about making math accessible.
 
 
 .. _Best Practices for Custom Content Types:
@@ -646,18 +632,14 @@ creating accessible HTML.
 Accessible Custom Content Resources
 ======================================================
 
-* Effective Practices for Description of Science Content within Digital
-  Talking Books, from the National Center for Accessible Media, provides best
-  practices for describing graphs, charts, diagrams, and illustrations.
-  http://ncam.wgbh.org/experience_learn/educational_media/stemdx
+* `Effective Practices for Description of Science Content within Digital Talking Books <http://ncam.wgbh.org/experience_learn/educational_media/stemdx>`_, from the National Center for Accessible Media, provides best practices for describing graphs, charts, diagrams, and illustrations.
 
-* AccessSTEM provides guidance on creating accessible science, technology,
-  engineering and math educational content.
-  http://www.washington.edu/doit/programs/accessstem/overview
+* `AccessSTEM <http://www.washington.edu/doit/programs/accessstem/overview>`_
+  provides guidance on creating accessible science, technology, engineering
+  and math educational content.
 
-* The National Center on Educational Outcomes (NCEO) provides Principles and
-  Characteristics of Inclusive Assessment and Accountability Systems.
-  http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html
+* The National Center on Educational Outcomes (NCEO) provides `Principles and Characteristics of Inclusive Assessment and Accountability Systems <http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html>`_.
+  
 
 
 
@@ -792,15 +774,14 @@ Keep the following guidelines in mind when you create HTML content.
 HTML Markup Resources
 ====================================================
 
-* Creating Semantic Structure provides guidance on reflecting the semantic
-  structure of a web page in the underlying markup (WebAIM).
-  http://webaim.org/techniques/semanticstructure/
+* `Creating Semantic Structure <http://webaim.org/techniques/semanticstructure/>`_ provides guidance on
+reflecting the semantic structure of a web page in the underlying markup (WebAIM).
  
-* Creating Accessible Tables provides specific guidance on creating data
-  tables with the appropriate semantic structure so that screen readers can
-  correctly present the information (WebAIM).
-  http://webaim.org/techniques/tables/data
-
+* `Creating Accessible Tables <http://webaim.org/techniques/tables/data>`_
+  provides specific guidance on creating data tables with the appropriate
+  semantic structure so that screen readers can correctly present the
+  information (WebAIM).
+  
 
 .. _Universal Design for Learning:
 
