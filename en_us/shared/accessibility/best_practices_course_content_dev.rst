@@ -273,20 +273,21 @@ Creating Accessible Course Materials
 
 The source teaching materials for your course might exist in a variety of
 formats. For example, your syllabus might be in MS Word, your presentation
-slides in MS PowerPoint, and your textbooks in publisher-supplied PDF. It is 
-important to consider the accessibility of these supplemental materials 
-before making them available through your course.    
+slides in MS PowerPoint, and your textbooks in publisher-supplied PDF. It is
+important to consider how accessible these supplemental materials are, before
+making them available through your course.
 
-Carefully consider the document format you choose to publish for your course materials
-as some formats support accessibility better than others.  When
-possible, create course materials in HTML using the tools available to you in 
-edX Studio. When making digital textbooks (ebooks) available within your course, ask
-digital book publishers for books in either `DAISY
-<https://en.wikipedia.org/wiki/DAISY_Digital_Talking_Book>`_ and/or `EPUB 3
-<https://en.wikipedia.org/wiki/EPUB#Version_3.0.1_.28current_version.29>`_ formats.
-Both formats include unparalleled support for accessibility.  However, just supporting
-accessibility does not always mean a document will be accessible. When sourcing ebooks
-from third parties, it helps to ask the right questions about accessibility.
+Carefully consider the document format you choose for publishing your course
+materials, because some formats support accessibility better than others.
+Whenever possible, create course materials in HTML format, using the tools
+available to you in edX Studio. When you make digital textbooks (ebooks)
+available within your course, ask digital book publishers for books in either
+`DAISY <https://en.wikipedia.org/wiki/DAISY_Digital_Talking_Book>`_ or `EPUB 3
+<https://en.wikipedia.org/wiki/EPUB#Version_3.0.1_.28current_version.29>`_
+format, or both. Both of these digital book formats include unparalleled
+support for accessibility.  However, simply supporting accessibility does not
+always mean a document will be accessible. When you source ebooks from third
+parties, it helps to ask the right questions about accessibility.
 
 * Can screen readers read the document text?
 * Do images in the document include alternative text descriptions?
@@ -295,11 +296,11 @@ from third parties, it helps to ask the right questions about accessibility.
 * Does the document have navigational aids, such as a table of contents,
   index, headings, and bookmarks?
 
-Natively accessible formats like those mentioned above may not always be an 
-available option.  Other popular document formats included in edX courses include 
-PDF, Microsoft Word, Excel, or Powerpoint. Many of the same accessibility techniques 
-and principals that apply to authoring web content also apply to these document formats
-as well.
+Natively accessible formats like those mentioned above might not always be
+available options. Other popular document formats included in edX courses
+include PDF, Microsoft Word, Excel, or Powerpoint. Many of the same
+accessibility techniques and principles that apply to authoring web content
+apply to these document formats as well.
 
 * Images must have descriptive text associated with them.
 * Documents should be well structured.
@@ -308,75 +309,91 @@ as well.
 * Tables should include properly defined column and row headers.
 * Color combinations should be high contrast.
 
-The information that follows should provide some practical guidance to publishing
-accessible course materials in these popular formats.
+The information that follows provides some practical guidance to publishing
+accessible course materials in popular formats.
 
 .. contents::
    :local:
    :depth: 1
 
+
+.. _Creating Accessible PDFs:
+
 =====================================================
 Creating Accessible PDF Documents
 =====================================================
 
-Not all ebooks are available in DAISY or EPUB 3 format. Portable Document Format 
-(PDF) is another common format for course materials, including textbooks supplied 
-by publishers. However, converting materials to PDF documents can create 
-accessibility barriers, particularly for learners with visual impairments who rely 
-on the semantic document structure inherently available in HTML, DAISY, or EPUB 3,
-to understand and effectively navigate PDF documents (see :ref:`HTML Markup Resources`). 
+Not all ebooks are available in DAISY or EPUB 3 format. Portable Document
+Format (PDF) is another common format for course materials, including
+textbooks supplied by publishers. However, converting materials to PDF
+documents can create accessibility barriers, particularly for learners with
+visual impairments. Such learners rely on the semantic document structure
+inherently available in HTML, DAISY, or EPUB 3 to understand and effectively
+navigate PDF documents. For more information, see :ref:`HTML Markup
+Resources`).
 
-Accessibility issues are very common in PDF files that were scanned from printed
-sources or exported from a non-PDF document format.  Scanned documents are simply 
-images of text. Optical Character Recognition (OCR) must be performed on these 
-documents and the resulting text must be proofread for accuracy and embedded within
-the PDF file. After proofreading, the embedded text must have semantic structure and
-other metadata added (Headings, links, alternative content for images, etc.).
+Accessibility issues are very common in PDF files that were scanned from
+printed sources or exported from a non-PDF document format. Scanned documents
+are simply images of text. To make scanned documents accessible, you must
+perform Optical Character Recognition (OCR) on these documents, and proofread
+the resulting text for accuracy before embedding it within the PDF file. You
+must also add semantic structure and other metadata (headings, links,
+alternative content for images, and so on) to the embedded text.
 
-When exporting documents to PDF from other formats, it is important to ensure that
-the source document contains all the semantic structure and metadata before exporting.
-Unfortunately, some applications do not include this information when exporting and
-require the author to add or "tag" the document manually using PDF editing software. 
-You should carefully consider whether exporting to PDF is necessary at all. 
+When you export documents to PDF from other formats, it is important to ensure
+that the source document contains all the required semantic structure and
+metadata before exporting. Unfortunately, some applications do not include
+this information when exporting and require the author to add or "tag" the
+document manually using PDF editing software. You should carefully consider
+whether exporting to PDF is necessary at all.
 
-.. note:: `OpenOffice <https://www.openoffice.org/>`_ and 
-   `LibreOffice <https://www.libreoffice.org/>`_ will produce the best results when 
-   exporting to PDF.
+.. note:: `OpenOffice <https://www.openoffice.org/>`_ and `LibreOffice
+   <https://www.libreoffice.org/>`_ will produce the best results when you
+   export documents to PDF.
 
-Best Practices for Authoring accessible PDF documents
+
+Best Practices for Authoring Accessible PDF Documents
 *******************************************************
 
-* Explicitly define the language of the document so screen readers know what language
-  they should use to parse the document
-* Explicitly set the document title. When exporting, this usually defaults to the file
-  name, not a human readable title.
-* Verify that all images have alternative content defined or are marked as "decorative
-  only"
-* Verify that PDF file is "tagged" (semantic structure from source document is 
-  correctly imported to PDF.)
-* Verify that a logical reading order is defined. This is especially important for 
-  documents that have atypical page layouts or structure.
-* If your document includes tables, verify that table headers for rows and columns are
-  properly defined.
+* Explicitly define the language of the document so that screen readers know
+  what language they should use to parse the document.
+
+* Explicitly set the document title. When you export a file to PDF format, the
+  document title usually defaults to the file name, not a human readable
+  title.
+
+* Verify that all images have alternative content defined or are marked as
+  decorative only.
+
+* Verify that the PDF file is "tagged". Make sure the semantic structure from
+  the source document has been correctly imported to the PDF file.
+
+* Verify that a logical reading order is defined. This is especially important
+  for documents that have atypical page layouts or structure.
+
+* If your document includes tables, verify that table headers for rows and
+  columns are properly defined.
   
-.. note::  When exporting Microsoft Office documents as PDF, use the **Save as PDF**
-   option. Make sure the **Document Structure Tags for Accessibility** option is
-   selected (consult your software documentation for more details). PDFs generated from 
-   Windows versions of MS Office might be more accessible than those generated from Mac 
-   OS versions of MS Office.  If you are using Mac OS, we highly recommend exporting from
-   OpenOffice or LibreOffice.
+.. note::  When you export Microsoft Office documents as PDF, use the **Save
+   as PDF** option. Make sure the **Document Structure Tags for
+   Accessibility** option is selected (consult your software documentation for
+   more details). PDFs generated from Windows versions of MS Office might be
+   more accessible than those generated from Mac OS versions of MS Office.  If
+   you are using Mac OS, we highly recommend exporting from OpenOffice or
+   LibreOffice.
 
-.. note:: When exporting from OpenOffice or LibreOffice, use the **Export as PDF** option.
-   Make sure the **Tagged PDF** checkbox is checked.
+.. note:: When you export from OpenOffice or LibreOffice, use the **Export as
+   PDF** option. Make sure the **Tagged PDF** option is selected.
 
-Evaluating PDF files for accessibility
-*******************************************************
 
-EdX highly recommends using the tools available in Adobe Acrobat Pro to evaluate
-your PDF files for accessibility ("Accessibility Checker"). Adobe Acrobat Pro also 
-includes tools for fixing most common accessibility issues ("Make Accessible" tool). 
+Evaluating PDF Files for Accessibility
+***************************************
 
-.. _Accessible PDF Resources:
+EdX highly recommends using the tools available in Adobe Acrobat Pro
+("Accessibility Checker") to evaluate your PDF files for accessibility. Adobe
+Acrobat Pro also includes a tool ("Make Accessible") for fixing most common
+accessibility issues.
+
 
 Accessible PDF Resources
 *******************************************************
@@ -384,10 +401,9 @@ Accessible PDF Resources
 * Microsoft provides detailed `guidance on generating accessible PDFs from
   Microsoft Office applications 
   <http://office.microsoft.com/en-gb/word-help/create-accessible-pdfs-HA102478227.aspx>`_, 
-  including Word, Excel, and PowerPoint
+  including Word, Excel, and PowerPoint.
 
-* Adobe provides documentation on how to `Create and verify PDF accessibility
-  <https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html>`_
+* Adobe provides documentation on how to `create and verify PDF accessibility <https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html>`_.
 
 * `Adobe Accessibility <http://www.adobe.com/accessibility.html>`_ (Adobe) is a comprehensive 
   collection of resources on PDF authoring and repair, using Adobe’s products.
@@ -401,104 +417,117 @@ Accessible PDF Resources
 * The Accessible Digital Office Document (ADOD) Project provides guidance on
   `creating accessible Office documents <http://adod.idrc.ocad.ca/>`_. 
 
+
 =====================================================
 Creating Accessible Word Documents
 =====================================================
 
-Many of the same accessibility techniques and principals that apply to authoring web 
-content also apply when creating Word documents as well.
+Many of the same accessibility techniques and principles that apply to
+authoring web content also apply to creating Word documents.
 
-* Images must have `descriptive text associated with them 
-<https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414986>`_.
+* Images must have `descriptive text associated <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414986>`_ with them.
+
 * Documents should be `well structured <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414990>`_.
-* `Hyperlinks should be meaningful 
-<https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414991>`_ and describe the destination.
+
+* Hyperlinks should be `meaningful <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc275414991>`_ and describe the destination.
+
 * Tables should include `properly defined column and row headers <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D#__toc271197283>`_.
+
 * Color combinations should be high contrast.
-* `Verify the accessibility of your document 
-<https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_ 
-using Microsoft's Accessibility Checker
 
-Keep formatting simple. Use headings, paragraphs, lists, images, and captions,
-and tables for tabular data. Do not add unnecessary indents, rules, columns,
-blank lines, or typographic variation. 
+* Verify the accessibility of your document using `Microsoft's Accessibility Checker <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
 
-Use standardized styles for formatting your text, such as Normal, Heading 1,
-and Heading 2, rather than manually formatting text using boldface and
-indents. Formatting text for its semantic meaning and not
-for its visual appearance allows users of assistive technology to consume and navigate 
-documents for effectively and efficiently.
+In addition, follow these guidelines when you format Word documents.
+
+* Keep formatting simple. Use headings, paragraphs, lists, images, and
+  captions. Use tables for tabular data. Do not add unnecessary indents,
+  rules, columns, blank lines, or typographic variation.
+
+* Use standardized styles for formatting your text, such as Normal, Heading 1,
+  and Heading 2, rather than manually formatting text using text styles and
+  indents. Formatting text for its semantic meaning and not for its visual
+  appearance allows users of assistive technology to consume and navigate
+  documents effectively and efficiently.
+
 
 Accessible Microsoft Word Resources
-*******************************************************
+*************************************
 
-* Microsoft guide to `creating accessible Word documents 
-<https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D>`_
-* Microsoft tool that allows you to `check Word documents for accessibility issues 
-<https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_
+* Microsoft guide to `creating accessible Word documents <https://support.office.com/en-us/article/Creating-accessible-Word-documents-D9BF3683-87AC-47EA-B91A-78DCACB3C66D>`_.
+
+* Microsoft tool that allows you to `check Word documents for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+
 
 =====================================================
 Creating Accessible Excel Documents
 =====================================================
 
-Many of the same accessibility techniques and principals that apply to authoring 
-data tables in HTML apply to Excel spreadsheets as well.
+Many of the same accessibility techniques and principles that apply to
+authoring data tables in HTML also apply to creating Excel spreadsheets.
 
-* Images must have `descriptive text associated with them 
-<https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205010>`_.
-* `Column and row headings should be programmatically identified <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205011>`_. 
-* `Hyperlinks should be meaningful 
-<https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271197281>`_ and describe the destination.
+* Images must have `descriptive text associated <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205010>`_ with them.
+
+* Column and row headings should be `programmatically identified <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271205011>`_. 
+
+* Hyperlinks should be `meaningful <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593#__toc271197281>`_ and describe the destination.
+
 * Use a unique and informative title for each worksheet tab.
+
 * Do not use blank cells for formatting.
+
 * Color combinations should be high contrast.
-* `Verify the accessibility of your workbook 
-<https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_ 
-using Microsoft's Accessibility Checker
+
+* Verify the accessibility of your workbook using `Microsoft's Accessibility Checker <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+
 
 Accessible Microsoft Excel Resources
 *******************************************************
 
-* Microsoft guide to `creating accessible Excel workbooks 
-<https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593>`_
-* Microsoft tool that allows you to `check Excel workbooks for accessibility issues 
-<https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_
+* Microsoft guide to `creating accessible Excel workbooks <https://support.office.com/en-us/article/Creating-accessible-Excel-workbooks-6CC05FC5-1314-48B5-8EB3-683E49B3E593>`_.
+
+* Microsoft tool that allows you to `check Excel workbooks for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+
 
 =====================================================
 Creating Accessible Powerpoint Documents
 =====================================================
 
-Many of the same accessibility techniques and principals that apply to authoring 
-web content apply to Powerpoint presentations as well.
+Many of the same accessibility techniques and principles that apply to
+authoring web content also apply to creating Powerpoint presentations.
 
-* Images must have `descriptive text associated with them 
-<https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131977>`_.
-* `Column and row headings should be programmatically identified <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131978>`_. 
-* `Hyperlinks should be meaningful 
-<https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131980>`_ and describe the destination.
+* Images must have `descriptive text associated with them <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131977>`_.
+
+* Column and row headings should be `programmatically identified <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131978>`_. 
+
+* Hyperlinks should be `meaningful <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131980>`_ and describe the destination.
+
 * Use a unique and informative title for each slide.
+
 * Ensure that information is `presented in a logical order <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25#__toc286131984>`_
+
 * Color combinations should be high contrast.
+
+* Verify the accessibility of your presentation using `Microsoft's Accessibility Checker <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
 
 To make your content accessible and comprehensible to learners who use screen
 reading software, start in Outline view and include all of your content as
-text. Add design elements and images after completing the outline, and use the
-picture formatting options in MS Powerpoint to include detailed text
+text. After completing the outline, add design elements and images, and use
+the picture formatting options in MS Powerpoint to include detailed text
 descriptions of images that convey useful information to learners who cannot
-view the images.  Use the **Home > Drawing > Arrange > Selection Pane** option to view the reading
-order of objects on each slide. If the reading order is not logical, change
-the order of the objects.
-* `Verify the accessibility of your presentation 
-<https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_ 
-using Microsoft's Accessibility Checker
-  
+view the images. Use the **Home > Drawing > Arrange > Selection Pane** option
+to view the reading order of objects on each slide. If the reading order is
+not logical, change the order of the objects.
+
+
 Accessible Powerpoint Resources
 *******************************************************
 
-* `Creating accessible PowerPoint presentations <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25>`_
-* WebAIM's `PowerPoint Accessibility <http://webaim.org/techniques/powerpoint/>`_ 
-* Microsoft tool that allows you to `check Word documents for accessibility issues 
-<https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_
+* Microsoft guide to `creating accessible PowerPoint presentations <https://support.office.com/en-us/article/Creating-accessible-PowerPoint-presentations-6F7772B2-2F33-4BD2-8CA7-DAE3B2B3EF25>`_.
+
+* WebAIM's `PowerPoint Accessibility <http://webaim.org/techniques/powerpoint/>`_.
+
+* Microsoft tool that allows you to `check Powerpoint documents for accessibility issues <https://support.office.com/en-us/article/Check-for-accessibility-issues-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-US&rs=en-US&ad=US>`_.
+
 
 .. _Best Practices for Math Content:
 
@@ -696,8 +725,6 @@ Accessible Custom Content Resources
 * The National Center on Educational Outcomes (NCEO) provides `Principles and Characteristics of Inclusive Assessment and Accountability Systems <http://www.cehd.umn.edu/nceo/onlinepubs/Synthesis40.html>`_.
   
 
-
-
 .. _Creating Accessible Media:
 
 ************************************************
@@ -824,6 +851,9 @@ Keep the following guidelines in mind when you create HTML content.
   and include descriptive row and column headings. Tag row and column headers
   with the ``<th>`` element so screen readers can effectively describe the
   content in the table.
+
+
+.. _HTML Markup Resources:
 
 ====================================================
 HTML Markup Resources
