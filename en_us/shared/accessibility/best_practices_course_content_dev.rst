@@ -437,13 +437,15 @@ Accessible PDF Resources
   
 .. This UWash link is behind a login page. Delete or replace? 
 
-* `PDF Accessibility <http://www.washington.edu/accessibility/pdf/>`_ (University of Washington) provides a step-by-step guide to creating accessible PDFs from different sources and using different applications. 
+* `PDF Accessibility (University of Washington) <http://www.washington.edu/accessibility/pdf/>`_ provides a step-by-step guide to creating accessible PDFs from different sources and using different applications.
 
-* `PDF Accessibility <http://webaim.org/techniques/acrobat/>`_ (WebAIM) provides a detailed and illustrated guide on creating accessible PDFs. 
+* `PDF Accessibility (WebAIM) <http://webaim.org/techniques/acrobat/>`_
+  provides a detailed and illustrated guide on creating accessible PDFs.
 
 * The National Center of Disability and Access to Education has a `collection <http://ncdae.org/resources/cheatsheets/>`_ of one-page “cheat sheets” on accessible document authoring.
   
 * The `Accessible Digital Office Document (ADOD) Project <http://adod.idrc.ocad.ca/>`_ provides guidance on creating accessible Office documents. 
+
 
 .. _Best Practices for Math Content:
 
@@ -774,8 +776,7 @@ Keep the following guidelines in mind when you create HTML content.
 HTML Markup Resources
 ====================================================
 
-* `Creating Semantic Structure <http://webaim.org/techniques/semanticstructure/>`_ provides guidance on
-reflecting the semantic structure of a web page in the underlying markup (WebAIM).
+* `Creating Semantic Structure <http://webaim.org/techniques/semanticstructure/>`_ provides guidance on reflecting the semantic structure of a web page in the underlying markup (WebAIM).
  
 * `Creating Accessible Tables <http://webaim.org/techniques/tables/data>`_
   provides specific guidance on creating data tables with the appropriate
